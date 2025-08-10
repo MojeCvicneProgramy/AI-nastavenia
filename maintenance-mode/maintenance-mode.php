@@ -4,9 +4,17 @@ Plugin Name: Under Construction
 Description: A simple maintenance mode plugin to display a custom maintenance page for non-logged-in users.
 Version: 1.0
 Author: Your Name
+Text Domain: maintenance-mode
+Domain Path: /languages
 */
 
 defined('ABSPATH') or die('No script kiddies please!');
+
+// Load plugin textdomain
+function mm_load_textdomain() {
+    load_plugin_textdomain( 'maintenance-mode', false, basename( dirname( __FILE__ ) ) . '/languages' );
+}
+add_action( 'plugins_loaded', 'mm_load_textdomain' );
 
 // Function to check if maintenance mode is enabled
 function mm_is_maintenance_mode() {
