@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="<?php echo plugins_url('assets/style.css', __FILE__); ?>">
 </head>
 <body>
-    <div class="maintenance-container">
+    <main class="maintenance-container">
         <h1>Prebieha údržba...</h1>
         <p>Ospravedlňujeme sa za nepríjemnosti, ale naša stránka je momentálne nedostupná.</p>
         <p>Odhadovaný čas návratu: <strong>1 hodina</strong>.</p>
         <p>Pre viac informácií nás kontaktujte na: <a href="mailto:info@example.com">info@example.com</a> alebo na telefónnom čísle: <strong>+421 123 456 789</strong>.</p>
-    </div>
+    </main>
 </body>
 </html>
